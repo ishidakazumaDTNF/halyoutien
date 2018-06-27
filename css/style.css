@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #666;	/*全体の文字色*/
+	font-family: "A-OTF Jun Pro","ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 14px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #fff url(../images/bg.jpg);	/*背景色と背景壁紙*/
+	-webkit-text-size-adjust: none;
+	overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
+ul {list-style-type: none;}
+ol {padding-left: 65px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
+a {
+	color: #666;	/*リンクテキストの色*/
+}
+a:hover {
+	color: #e9729f;			/*マウスオン時の文字色*/
+	text-decoration: none;
+}
+
+#container {
+	max-width: 1400px;	/*最大幅*/
+	margin: 0 auto;
+}
+
+#contents {
+	padding: 5% 8% 0;
+	position: relative;z-index: 10;
+	top: 0px;
+	overflow: hidden;
+}
+
+#main {
+	float: right;	/*右側に回り込み*/
+	width: 73%;		/*幅*/
+	overflow: hidden;
+	padding-top: 10%;	/*コンテンツ上にあける余白*/
+}
+
+#top #main {
+	padding-top: 30%;	/*コンテンツ上にあける余白*/
+}
+#new {
+	width: 100%;
+
+}
+
+#main h2 {
+	clear: both;
+	margin-bottom: 15px;
+	color: #8B572A;		/*文字色*/
+	font-size: 24px;
+	float: left;
+	width: auto;
+	height: auto;
+	padding-left: 25%;
+}
+#icon_news{
+	float: left;
+	width: 50px;
+	height: 50px;	
+}
+
+#main h3 {
+	clear: both;
+	margin-bottom: 15px;
+	background: #FFF;	/*背景色*/
+	padding: 7px 29px;	/*上下、左右への余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+	border-radius: 50px;	/*角丸のサイズ。大きめにしておけばOK。*/
+}
+
+#main p {
+	padding: 0px 30px 14px;	/*上、左右、下への余白*/
+}
+#main h2 + p,
+#main h3 + p {
+	margin-top: -5px;
+}
+
+#sub {
+	float: left;	/*左に回り込み*/
+	width: 22%;		/*幅*/
+}
+
+#sub h2 {
+	font-size: 100%;
+	padding-bottom: 10px;
+}
+/*subコンテンツのh2タグの１文字目への設定*/
+#sub h2::first-letter {
+	border-left: 3px solid #e9729f;	/*左側のアクセント用ラインの幅、線種、色*/
+	padding-left: 10px;
+}
+
+
+#logo, #logo-s {
+	background: white;	/*背景色*/
+	text-align: center;
+	padding: 40px;		
+	border-radius: 15px;	/*角丸のサイズ*/
+	margin-bottom: 30px;	/*ロゴボックスの下にあけるスペース*/
+	border: 5px solid #fff;	/*枠線の幅、線種、色*/
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);			/*同上*/
+}
+
+#menubar,
+#menubar-s {
+	overflow: hidden;
+	font-size: 16px;
+}
+
+#menubar a,
+#menubar-s a {
+	display: block;
+	text-decoration: none;
+	background: #fff;	/*背景色（古いブラウザ用）*/
+	background: linear-gradient(#fff 50%, #eee);	/*背景色グラデーション*/
+	text-align: center;	/*文字をセンタリング*/
+	padding: 10px 0px;	/*上下、左右へのメニュー内の余白*/
+	margin: 0px 2px 10px;	/*上、左右、下へあけるメニューの外側への余白*/
+	border: 2px solid #cbb994;	/*枠線の幅、線種、色*/
+	border-radius: 15px;	/*角丸のサイズ*/
+	line-height: 1.6;		/*行間。少し狭くする。*/
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);			/*同上*/
+}
+
+#menubar a:hover {
+	background: #fff;	/*背景色*/
+	position: relative;
+	left: 1px;	/*マウスオン時い左から1pxずらす*/
+	top: 1px;	/*マウスオン時い上から1pxずらす*/
+}
+
+#menubar a span,
+#menubar-s a span{
+	display: block;
+	color: #cbb994;	/*文字色*/
+	font-size: 9px;	/*文字サイズ。小さく。*/
+	letter-spacing: 0.2em;	/*文字間隔を広く*/
+}
+
+#menubar-s,#logo-s {
+	display: none;
+}
+
+#menubar_hdr {
+	display: none;
+}
+
+#sub ul.submenu {
+	margin-bottom: 15px;	/*メニューブロックの下に空けるスペース*/
+	border-top: solid 1px #e4e4e4;	/*上の線の線種、幅、色*/
+}
+
+#sub ul.submenu li {
+	background: #fff;	/*背景色*/
+	border-bottom: solid 1px #e4e4e4;	/*下の線の線種、幅、色*/
+}
+#sub ul.submenu li a {
+	text-decoration: none;
+	display: block;
+	padding: 2px 10px;	/*メニュー内の余白。上下、左右への設定。*/
+}
+
+#main .box1 {
+	padding: 15px;			/*ボックス内の余白*/
+	margin-bottom: 15px;	/*ボックスの下に空けるスペース*/
+	background: #f3f3f3;	/*背景色（古いブラウザ用）*/
+	background: rgba(0,0,0,0.05);	
+	border: solid 1px #ccc;	/*線の線種、幅、色*/
+	-webkit-box-shadow: 0px 0px 1px 1px #fff inset;	/*ボックスの影。内側に白のラインを入れる。*/
+	box-shadow: 0px 0px 1px 1px #fff inset;			/*同上*/
+	border-radius: 10px;	/*角丸のサイズ*/
+}
+
+#main .box1 ul.submenu {
+	margin-bottom: 0px;
+}
+
+#sub .box1 {
+	padding: 15px;			/*ボックス内の余白*/
+	margin-bottom: 15px;	/*ボックスの下に空けるスペース*/
+	background: #f3f3f3;	/*背景色（古いブラウザ用）*/
+	background: rgba(0,0,0,0.05);	
+	border: solid 1px #ccc;	/*線の線種、幅、色*/
+	-webkit-box-shadow: 0px 0px 1px 1px #fff inset;	/*ボックスの影。内側に白のラインを入れる。*/
+	box-shadow: 0px 0px 1px 1px #fff inset;			/*同上*/
+	border-radius: 10px;	/*角丸のサイズ*/
+}
+
+#sub .box1 ul.submenu {
+	margin-bottom: 0px;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	padding: 10px 0px;
+}
+footer a {
+	text-decoration: none;
+}
+footer .pr {
+	display: block;
+	font-size: 80%;
+}
+
+#headernews{
+	padding-left: 180px;
+}
+#new dl {
+	padding-left: 30px;
+	margin-bottom: 15px;
+	height: 450px;
+}
+
+#new dt {
+	float: left;
+	width: 100%;
+	font-size: 21px;
+}
+
+#new dd {
+	padding-left: 0px;
+	float: left;
+	font-size: 13px;
+	padding-left: 25px;
+}
+
+#new a {
+	text-decoration: none;
+}
+
+hr{
+	width: 750px;
+}
+
+#newinfo {
+	clear: both;
+	border: 1px solid #8B572A;
+	overflow: scroll;
+	background-color: white;
+}
+
+#pagetop {
+	clear: both;
+	padding-top: 40px;
+	text-align: center;
+}
+
+
+#pagetop img:hover {
+	position: relative;
+	left: 1px;	/*マウスオン時い左から1pxずらす*/
+	top: 1px;	/*マウスオン時い上から1pxずらす*/
+}
+
+.blue_icon {
+	background: #53B8D0;
+	color: #FFF;
+	font-size: 18px;
+	padding: 2px 14px;
+	border-radius: 10px;
+	margin: 0px 5px;
+}
+
+.orenge_icon {
+	background: #F09536;
+	color: #FFF;
+	font-size: 18px;
+	padding: 2px 14px;
+	border-radius: 10px;
+	margin: 0px 5px;
+}
+
+.green_icon {
+	background: #5DB192;
+	color: #FFF;
+	font-size: 18px;
+	padding: 2px 14px;
+	border-radius: 10px;
+	margin: 0px 5px;
+}
+
+#about_img{
+	clear: both;
+	float: left;
+}
+
+#about_sent{
+	width: 34%;
+	height: 100%;
+	float: left;
+	font-size: 16px;
+}
+
+#guidance_sent li{
+	font-size: 22px;
+}
+
+.ul1 li{
+	float: left;
+}
+
+.ul2{
+	clear: both;
+}
+
+.ul2 li{
+	padding-top: 40px;
+	float: left;
+}
+
+.float_left{
+	float: left;
+}
+
+#guidance_sent a{
+	text-decoration: none;
+	border-left-style: solid;
+	border-left-width: 6px;
+	border-left-color: #5DB192;
+}
+
+/*その他
+---------------------------------------------------------------------------*/
+.look {background: #dcdcdc;padding: 4px;border-radius: 4px;}
+.mb15,.mb1em {margin-bottom: 15px;}
+.mb30 {margin-bottom: 30px;}
+.clear {clear: both;}
+ul.disc {padding-left: 60px;list-style: disc;}
+.color1 {color: #e9729f;}
+.pr {font-size: 10px;}
+.wl {width: 96%;}
+.ws {width: 50%;}
+.c {text-align: center;}
+.r {text-align: right;}
+.l {text-align: left;}
+img.fr {float: right;margin-left: 10px;margin-bottom: 10px;}
+img.fl {float: left;margin-right: 10px;margin-bottom: 10px;}
+.big1 {font-size: 30px;letter-spacing: 0.2em;}
+.mini1 {font-size: 11px;}
+.marg_top_20 {margin-top: 20px;}
+.padi_left_100 {padding-left: 100px;}
